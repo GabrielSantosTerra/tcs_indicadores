@@ -12,6 +12,9 @@ if errorlevel 1 (
     git remote add origin https://github.com/GabrielSantosTerra/tcs_indicadores.git
 )
 
+:: Atualizar repositório local com alterações remotas
+git pull origin main --rebase
+
 :: Adicionando arquivos
 echo Adicionando arquivos ao stage...
 git add .
